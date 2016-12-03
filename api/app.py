@@ -7,11 +7,6 @@ magic = 0.0
 def index():
     return jsonify(hello='world')
 
-@app.route('/introspect', methods=['POST'])
-def introspect():
-    data = request.stream.read()
-    return jsonify(length=len(data))
-
 @app.route('/find', methods=['POST'])
 def find():
     global magic
