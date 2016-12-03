@@ -28,6 +28,13 @@
 	</array>
 	<key>NSCameraUsageDescription</key>
 	<string>So we can see you!</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>So we can hear you!</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

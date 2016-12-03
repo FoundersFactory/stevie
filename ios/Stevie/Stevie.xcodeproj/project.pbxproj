@@ -7,14 +7,305 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05F27890C82FD81C85A25D25 /* Pods_Stevie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BC2DB665DAB72A5F5EAF286 /* Pods_Stevie.framework */; };
 		130968181DF303BF009EB08B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130968171DF303BF009EB08B /* AppDelegate.swift */; };
 		1309681A1DF303BF009EB08B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130968191DF303BF009EB08B /* ViewController.swift */; };
 		1309681F1DF303BF009EB08B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1309681E1DF303BF009EB08B /* Assets.xcassets */; };
 		130968221DF303BF009EB08B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 130968201DF303BF009EB08B /* LaunchScreen.storyboard */; };
+		1328AF711DF348FB004B0DB3 /* ReferenceProxy in Frameworks */ = {isa = PBXBuildFile; fileRef = 1328AF5A1DF348E5004B0DB3 /* SpeechToTextV1.framework */; };
+		1328AF721DF348FB004B0DB3 /* ReferenceProxy in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1328AF5A1DF348E5004B0DB3 /* SpeechToTextV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1351676D1DF308C60011753C /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1351676C1DF308C60011753C /* CameraView.swift */; };
 		135167721DF30B260011753C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 135167711DF30B260011753C /* AVFoundation.framework */; };
 		135167751DF342810011753C /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135167741DF342810011753C /* OverlayView.swift */; };
+		13EB87661DF355DC000CE92A /* ReferenceProxy in Frameworks */ = {isa = PBXBuildFile; fileRef = 1328AF6E1DF348E5004B0DB3 /* RestKit.framework */; };
+		13EB87671DF355DC000CE92A /* ReferenceProxy in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1328AF6E1DF348E5004B0DB3 /* RestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		13EB876B1DF359AF000CE92A /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 13EB876A1DF359AF000CE92A /* Podfile */; };
+		13EB876F1DF35A12000CE92A /* AppController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EB876E1DF35A12000CE92A /* AppController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1328AF291DF348E5004B0DB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1328AF021DF348E4004B0DB3 /* WatsonDeveloperCloud.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B1A8E4FC1D19CEDA00678412;
+			remoteInfo = AlchemyDataNewsV1;
+		};
+		1328AF2B1DF348E5004B0DB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1328AF021DF348E4004B0DB3 /* WatsonDeveloperCloud.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B1A8E5051D19CEDB00678412;
+			remoteInfo = AlchemyDataNewsV1Tests;
+		};
+		1328AF2D1DF348E5004B0DB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1328AF021DF348E4004B0DB3 /* WatsonDeveloperCloud.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7AAAF5641CEEA2DF00B74848;
+			remoteInfo = AlchemyLanguageV1;
+		};
+		1328AF2F1DF348E5004B0DB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1328AF021DF348E4004B0DB3 /* WatsonDeveloperCloud.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7AAAF56D1CEEA2DF00B74848;
+			remoteInfo = AlchemyLanguageV1Tests;
+		};
+		1328AF311DF348E5004B0DB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1328AF021DF348E4004B0DB3 /* WatsonDeveloperCloud.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7AAAF5361CEEA23D00B74848;
+			remoteInfo = AlchemyVisionV1;
+		};
+		1328AF331DF348E5004B0DB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1328AF021DF348E4004B0DB3 /* WatsonDeveloperCloud.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7AAAF53F1CEEA23E00B74848;
+			remoteInfo = AlchemyVisionV1Tests;
+		};
+		1328AF351DF348E5004B0DB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1328AF021DF348E4004B0DB3 /* WatsonDeveloperCloud.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7AB445241D3E647A00E8748A;
+			remoteInfo = ConversationV1;
+		};
+		1328AF371DF348E5004B0DB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1328AF021DF348E4004B0DB3 /* WatsonDeveloperCloud.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7AB4452D1D3E647A00E8748A;
+			remoteInfo = ConversationV1Tests;
+		};
+		1328AF391DF348E5004B0DB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1328AF021DF348E4004B0DB3 /* WatsonDeveloperCloud.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7AAAF5091CEEA1DA00B74848;
+			remoteInfo = DialogV1;
+		};
+		1328AF3B1DF348E5004B0DB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1328AF021DF348E4004B0DB3 /* WatsonDeveloperCloud.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7AAAF5121CEEA1DA00B74848;
+			remoteInfo = DialogV1Tests;
+		};
+		1328AF3D1DF348E5004B0DB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1328AF021DF348E4004B0DB3 /* WatsonDeveloperCloud.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B1AAD2D31D08656B002DAB84;
+			remoteInfo = DocumentConversionV1;
+		};
+		1328AF3F1DF348E5004B0DB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1328AF021DF348E4004B0DB3 /* WatsonDeveloperCloud.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B1AAD2DC1D08656B002DAB84;
+			remoteInfo = DocumentConversionV1Tests;
+		};
+		1328AF411DF348E5004B0DB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1328AF021DF348E4004B0DB3 /* WatsonDeveloperCloud.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7AAAF4DC1CEEA16100B74848;
+			remoteInfo = LanguageTranslatorV2;
+		};
+		1328AF431DF348E5004B0DB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1328AF021DF348E4004B0DB3 /* WatsonDeveloperCloud.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7AAAF4E51CEEA16100B74848;
+			remoteInfo = LanguageTranslatorV2Tests;
+		};
+		1328AF451DF348E5004B0DB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1328AF021DF348E4004B0DB3 /* WatsonDeveloperCloud.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7AAAF4AF1CEEA10600B74848;
+			remoteInfo = NaturalLanguageClassifierV1;
+		};
+		1328AF471DF348E5004B0DB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1328AF021DF348E4004B0DB3 /* WatsonDeveloperCloud.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7AAAF4B81CEEA10700B74848;
+			remoteInfo = NaturalLanguageClassifierV1Tests;
+		};
+		1328AF491DF348E5004B0DB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1328AF021DF348E4004B0DB3 /* WatsonDeveloperCloud.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7AAAF4851CEEA07900B74848;
+			remoteInfo = PersonalityInsightsV2;
+		};
+		1328AF4B1DF348E5004B0DB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1328AF021DF348E4004B0DB3 /* WatsonDeveloperCloud.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7AAAF48E1CEEA07900B74848;
+			remoteInfo = PersonalityInsightsV2Tests;
+		};
+		1328AF4D1DF348E5004B0DB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1328AF021DF348E4004B0DB3 /* WatsonDeveloperCloud.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7A6711801DD0EEEB0070CA9D;
+			remoteInfo = PersonalityInsightsV3;
+		};
+		1328AF4F1DF348E5004B0DB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1328AF021DF348E4004B0DB3 /* WatsonDeveloperCloud.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7A6711881DD0EEEB0070CA9D;
+			remoteInfo = PersonalityInsightsV3Tests;
+		};
+		1328AF511DF348E5004B0DB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1328AF021DF348E4004B0DB3 /* WatsonDeveloperCloud.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7A987D4B1D19D887003626B2;
+			remoteInfo = RelationshipExtractionV1Beta;
+		};
+		1328AF531DF348E5004B0DB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1328AF021DF348E4004B0DB3 /* WatsonDeveloperCloud.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7A987D541D19D887003626B2;
+			remoteInfo = RelationshipExtractionV1BetaTests;
+		};
+		1328AF551DF348E5004B0DB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1328AF021DF348E4004B0DB3 /* WatsonDeveloperCloud.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 123B47121D1B3ABA007D0B22;
+			remoteInfo = RetrieveAndRankV1;
+		};
+		1328AF571DF348E5004B0DB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1328AF021DF348E4004B0DB3 /* WatsonDeveloperCloud.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 123B471B1D1B3ABA007D0B22;
+			remoteInfo = RetrieveAndRankV1Tests;
+		};
+		1328AF591DF348E5004B0DB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1328AF021DF348E4004B0DB3 /* WatsonDeveloperCloud.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7AAAF44E1CEE9F8800B74848;
+			remoteInfo = SpeechToTextV1;
+		};
+		1328AF5B1DF348E5004B0DB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1328AF021DF348E4004B0DB3 /* WatsonDeveloperCloud.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7AAAF4571CEE9F8800B74848;
+			remoteInfo = SpeechToTextV1Tests;
+		};
+		1328AF5D1DF348E5004B0DB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1328AF021DF348E4004B0DB3 /* WatsonDeveloperCloud.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 124C2DEF1D19E29000D9F602;
+			remoteInfo = TextToSpeechV1;
+		};
+		1328AF5F1DF348E5004B0DB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1328AF021DF348E4004B0DB3 /* WatsonDeveloperCloud.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 124C2DF81D19E29100D9F602;
+			remoteInfo = TextToSpeechV1Tests;
+		};
+		1328AF611DF348E5004B0DB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1328AF021DF348E4004B0DB3 /* WatsonDeveloperCloud.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7AAAF3F81CEE9D1900B74848;
+			remoteInfo = ToneAnalyzerV3;
+		};
+		1328AF631DF348E5004B0DB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1328AF021DF348E4004B0DB3 /* WatsonDeveloperCloud.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7AAAF4011CEE9D1900B74848;
+			remoteInfo = ToneAnalyzerV3Tests;
+		};
+		1328AF651DF348E5004B0DB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1328AF021DF348E4004B0DB3 /* WatsonDeveloperCloud.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7A987D141D19D424003626B2;
+			remoteInfo = TradeoffAnalyticsV1;
+		};
+		1328AF671DF348E5004B0DB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1328AF021DF348E4004B0DB3 /* WatsonDeveloperCloud.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7A987D1D1D19D424003626B2;
+			remoteInfo = TradeoffAnalyticsV1Tests;
+		};
+		1328AF691DF348E5004B0DB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1328AF021DF348E4004B0DB3 /* WatsonDeveloperCloud.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7AAAF3C31CEE9A3700B74848;
+			remoteInfo = VisualRecognitionV3;
+		};
+		1328AF6B1DF348E5004B0DB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1328AF021DF348E4004B0DB3 /* WatsonDeveloperCloud.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7AAAF3CC1CEE9A3700B74848;
+			remoteInfo = VisualRecognitionV3Tests;
+		};
+		1328AF6D1DF348E5004B0DB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1328AF021DF348E4004B0DB3 /* WatsonDeveloperCloud.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7AAAF39E1CEE99FC00B74848;
+			remoteInfo = RestKit;
+		};
+		1328AF6F1DF348E5004B0DB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1328AF021DF348E4004B0DB3 /* WatsonDeveloperCloud.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7AAAF3A71CEE99FC00B74848;
+			remoteInfo = RestKitTests;
+		};
+		1328AF731DF348FB004B0DB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1328AF021DF348E4004B0DB3 /* WatsonDeveloperCloud.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 7AAAF44D1CEE9F8800B74848;
+			remoteInfo = SpeechToTextV1;
+		};
+		13EB87681DF355DC000CE92A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1328AF021DF348E4004B0DB3 /* WatsonDeveloperCloud.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 7AAAF39D1CEE99FC00B74848;
+			remoteInfo = RestKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1328AF751DF348FB004B0DB3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1328AF721DF348FB004B0DB3 /* ReferenceProxy in Embed Frameworks */,
+				13EB87671DF355DC000CE92A /* ReferenceProxy in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		130968141DF303BF009EB08B /* Stevie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stevie.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -23,9 +314,15 @@
 		1309681E1DF303BF009EB08B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		130968211DF303BF009EB08B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		130968231DF303BF009EB08B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1328AF021DF348E4004B0DB3 /* WatsonDeveloperCloud.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = WatsonDeveloperCloud.xcodeproj; path = "../../../Downloads/ios-sdk-master/WatsonDeveloperCloud.xcodeproj"; sourceTree = "<group>"; };
 		1351676C1DF308C60011753C /* CameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		135167711DF30B260011753C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		135167741DF342810011753C /* OverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
+		13EB876A1DF359AF000CE92A /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		13EB876E1DF35A12000CE92A /* AppController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppController.swift; sourceTree = "<group>"; };
+		3BC2DB665DAB72A5F5EAF286 /* Pods_Stevie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stevie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6BE7E32F031D3060A6E18A4 /* Pods-Stevie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stevie.release.xcconfig"; path = "Pods/Target Support Files/Pods-Stevie/Pods-Stevie.release.xcconfig"; sourceTree = "<group>"; };
+		DA3777999E6DC694F8C8B2FB /* Pods-Stevie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stevie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Stevie/Pods-Stevie.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,18 +331,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				135167721DF30B260011753C /* AVFoundation.framework in Frameworks */,
+				1328AF711DF348FB004B0DB3 /* ReferenceProxy in Frameworks */,
+				13EB87661DF355DC000CE92A /* ReferenceProxy in Frameworks */,
+				05F27890C82FD81C85A25D25 /* Pods_Stevie.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0875257357FD98E17219BD02 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DA3777999E6DC694F8C8B2FB /* Pods-Stevie.debug.xcconfig */,
+				B6BE7E32F031D3060A6E18A4 /* Pods-Stevie.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		1309680B1DF303BE009EB08B = {
 			isa = PBXGroup;
 			children = (
+				1328AF021DF348E4004B0DB3 /* WatsonDeveloperCloud.xcodeproj */,
 				130968161DF303BF009EB08B /* Stevie */,
 				130968151DF303BF009EB08B /* Products */,
 				135167701DF30B250011753C /* Frameworks */,
+				0875257357FD98E17219BD02 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,7 +371,9 @@
 		130968161DF303BF009EB08B /* Stevie */ = {
 			isa = PBXGroup;
 			children = (
+				13EB876A1DF359AF000CE92A /* Podfile */,
 				130968171DF303BF009EB08B /* AppDelegate.swift */,
+				13EB87921DF35AB5000CE92A /* Controllers */,
 				1351676E1DF308C90011753C /* View Controllers */,
 				1351676F1DF308CE0011753C /* Views */,
 				1309681E1DF303BF009EB08B /* Assets.xcassets */,
@@ -68,6 +381,49 @@
 				130968231DF303BF009EB08B /* Info.plist */,
 			);
 			path = Stevie;
+			sourceTree = "<group>";
+		};
+		1328AF031DF348E4004B0DB3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1328AF2A1DF348E5004B0DB3 /* AlchemyDataNewsV1.framework */,
+				1328AF2C1DF348E5004B0DB3 /* AlchemyDataNewsV1Tests.xctest */,
+				1328AF2E1DF348E5004B0DB3 /* AlchemyLanguageV1.framework */,
+				1328AF301DF348E5004B0DB3 /* AlchemyLanguageV1Tests.xctest */,
+				1328AF321DF348E5004B0DB3 /* AlchemyVisionV1.framework */,
+				1328AF341DF348E5004B0DB3 /* AlchemyVisionV1Tests.xctest */,
+				1328AF361DF348E5004B0DB3 /* ConversationV1.framework */,
+				1328AF381DF348E5004B0DB3 /* ConversationV1Tests.xctest */,
+				1328AF3A1DF348E5004B0DB3 /* DialogV1.framework */,
+				1328AF3C1DF348E5004B0DB3 /* DialogV1Tests.xctest */,
+				1328AF3E1DF348E5004B0DB3 /* DocumentConversionV1.framework */,
+				1328AF401DF348E5004B0DB3 /* DocumentConversionV1Tests.xctest */,
+				1328AF421DF348E5004B0DB3 /* LanguageTranslatorV2.framework */,
+				1328AF441DF348E5004B0DB3 /* LanguageTranslatorV2Tests.xctest */,
+				1328AF461DF348E5004B0DB3 /* NaturalLanguageClassifierV1.framework */,
+				1328AF481DF348E5004B0DB3 /* NaturalLanguageClassifierV1Tests.xctest */,
+				1328AF4A1DF348E5004B0DB3 /* PersonalityInsightsV2.framework */,
+				1328AF4C1DF348E5004B0DB3 /* PersonalityInsightsV2Tests.xctest */,
+				1328AF4E1DF348E5004B0DB3 /* PersonalityInsightsV3.framework */,
+				1328AF501DF348E5004B0DB3 /* PersonalityInsightsV3Tests.xctest */,
+				1328AF521DF348E5004B0DB3 /* RelationshipExtractionV1Beta.framework */,
+				1328AF541DF348E5004B0DB3 /* RelationshipExtractionV1BetaTests.xctest */,
+				1328AF561DF348E5004B0DB3 /* RetrieveAndRankV1.framework */,
+				1328AF581DF348E5004B0DB3 /* RetrieveAndRankV1Tests.xctest */,
+				1328AF5A1DF348E5004B0DB3 /* SpeechToTextV1.framework */,
+				1328AF5C1DF348E5004B0DB3 /* SpeechToTextV1Tests.xctest */,
+				1328AF5E1DF348E5004B0DB3 /* TextToSpeechV1.framework */,
+				1328AF601DF348E5004B0DB3 /* TextToSpeechV1Tests.xctest */,
+				1328AF621DF348E5004B0DB3 /* ToneAnalyzerV3.framework */,
+				1328AF641DF348E5004B0DB3 /* ToneAnalyzerV3Tests.xctest */,
+				1328AF661DF348E5004B0DB3 /* TradeoffAnalyticsV1.framework */,
+				1328AF681DF348E5004B0DB3 /* TradeoffAnalyticsV1Tests.xctest */,
+				1328AF6A1DF348E5004B0DB3 /* VisualRecognitionV3.framework */,
+				1328AF6C1DF348E5004B0DB3 /* VisualRecognitionV3Tests.xctest */,
+				1328AF6E1DF348E5004B0DB3 /* RestKit.framework */,
+				1328AF701DF348E5004B0DB3 /* RestKitTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		1351676E1DF308C90011753C /* View Controllers */ = {
@@ -91,8 +447,17 @@
 			isa = PBXGroup;
 			children = (
 				135167711DF30B260011753C /* AVFoundation.framework */,
+				3BC2DB665DAB72A5F5EAF286 /* Pods_Stevie.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		13EB87921DF35AB5000CE92A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				13EB876E1DF35A12000CE92A /* AppController.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,13 +467,19 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 130968261DF303BF009EB08B /* Build configuration list for PBXNativeTarget "Stevie" */;
 			buildPhases = (
+				ED65DCE32FF2E93790BF96A1 /* [CP] Check Pods Manifest.lock */,
 				130968101DF303BF009EB08B /* Sources */,
 				130968111DF303BF009EB08B /* Frameworks */,
 				130968121DF303BF009EB08B /* Resources */,
+				1328AF751DF348FB004B0DB3 /* Embed Frameworks */,
+				2DB064877F404EC31331813A /* [CP] Embed Pods Frameworks */,
+				5DB12883E73C87ABB05D64EC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1328AF741DF348FB004B0DB3 /* PBXTargetDependency */,
+				13EB87691DF355DC000CE92A /* PBXTargetDependency */,
 			);
 			name = Stevie;
 			productName = Stevie;
@@ -143,6 +514,12 @@
 			mainGroup = 1309680B1DF303BE009EB08B;
 			productRefGroup = 130968151DF303BF009EB08B /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 1328AF031DF348E4004B0DB3 /* Products */;
+					ProjectRef = 1328AF021DF348E4004B0DB3 /* WatsonDeveloperCloud.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				130968131DF303BF009EB08B /* Stevie */,
@@ -150,11 +527,267 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		1328AF2A1DF348E5004B0DB3 /* AlchemyDataNewsV1.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AlchemyDataNewsV1.framework;
+			remoteRef = 1328AF291DF348E5004B0DB3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1328AF2C1DF348E5004B0DB3 /* AlchemyDataNewsV1Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = AlchemyDataNewsV1Tests.xctest;
+			remoteRef = 1328AF2B1DF348E5004B0DB3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1328AF2E1DF348E5004B0DB3 /* AlchemyLanguageV1.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AlchemyLanguageV1.framework;
+			remoteRef = 1328AF2D1DF348E5004B0DB3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1328AF301DF348E5004B0DB3 /* AlchemyLanguageV1Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = AlchemyLanguageV1Tests.xctest;
+			remoteRef = 1328AF2F1DF348E5004B0DB3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1328AF321DF348E5004B0DB3 /* AlchemyVisionV1.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AlchemyVisionV1.framework;
+			remoteRef = 1328AF311DF348E5004B0DB3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1328AF341DF348E5004B0DB3 /* AlchemyVisionV1Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = AlchemyVisionV1Tests.xctest;
+			remoteRef = 1328AF331DF348E5004B0DB3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1328AF361DF348E5004B0DB3 /* ConversationV1.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ConversationV1.framework;
+			remoteRef = 1328AF351DF348E5004B0DB3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1328AF381DF348E5004B0DB3 /* ConversationV1Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ConversationV1Tests.xctest;
+			remoteRef = 1328AF371DF348E5004B0DB3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1328AF3A1DF348E5004B0DB3 /* DialogV1.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = DialogV1.framework;
+			remoteRef = 1328AF391DF348E5004B0DB3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1328AF3C1DF348E5004B0DB3 /* DialogV1Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = DialogV1Tests.xctest;
+			remoteRef = 1328AF3B1DF348E5004B0DB3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1328AF3E1DF348E5004B0DB3 /* DocumentConversionV1.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = DocumentConversionV1.framework;
+			remoteRef = 1328AF3D1DF348E5004B0DB3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1328AF401DF348E5004B0DB3 /* DocumentConversionV1Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = DocumentConversionV1Tests.xctest;
+			remoteRef = 1328AF3F1DF348E5004B0DB3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1328AF421DF348E5004B0DB3 /* LanguageTranslatorV2.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = LanguageTranslatorV2.framework;
+			remoteRef = 1328AF411DF348E5004B0DB3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1328AF441DF348E5004B0DB3 /* LanguageTranslatorV2Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = LanguageTranslatorV2Tests.xctest;
+			remoteRef = 1328AF431DF348E5004B0DB3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1328AF461DF348E5004B0DB3 /* NaturalLanguageClassifierV1.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = NaturalLanguageClassifierV1.framework;
+			remoteRef = 1328AF451DF348E5004B0DB3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1328AF481DF348E5004B0DB3 /* NaturalLanguageClassifierV1Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = NaturalLanguageClassifierV1Tests.xctest;
+			remoteRef = 1328AF471DF348E5004B0DB3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1328AF4A1DF348E5004B0DB3 /* PersonalityInsightsV2.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = PersonalityInsightsV2.framework;
+			remoteRef = 1328AF491DF348E5004B0DB3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1328AF4C1DF348E5004B0DB3 /* PersonalityInsightsV2Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = PersonalityInsightsV2Tests.xctest;
+			remoteRef = 1328AF4B1DF348E5004B0DB3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1328AF4E1DF348E5004B0DB3 /* PersonalityInsightsV3.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = PersonalityInsightsV3.framework;
+			remoteRef = 1328AF4D1DF348E5004B0DB3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1328AF501DF348E5004B0DB3 /* PersonalityInsightsV3Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = PersonalityInsightsV3Tests.xctest;
+			remoteRef = 1328AF4F1DF348E5004B0DB3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1328AF521DF348E5004B0DB3 /* RelationshipExtractionV1Beta.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RelationshipExtractionV1Beta.framework;
+			remoteRef = 1328AF511DF348E5004B0DB3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1328AF541DF348E5004B0DB3 /* RelationshipExtractionV1BetaTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RelationshipExtractionV1BetaTests.xctest;
+			remoteRef = 1328AF531DF348E5004B0DB3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1328AF561DF348E5004B0DB3 /* RetrieveAndRankV1.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RetrieveAndRankV1.framework;
+			remoteRef = 1328AF551DF348E5004B0DB3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1328AF581DF348E5004B0DB3 /* RetrieveAndRankV1Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RetrieveAndRankV1Tests.xctest;
+			remoteRef = 1328AF571DF348E5004B0DB3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1328AF5A1DF348E5004B0DB3 /* SpeechToTextV1.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SpeechToTextV1.framework;
+			remoteRef = 1328AF591DF348E5004B0DB3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1328AF5C1DF348E5004B0DB3 /* SpeechToTextV1Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SpeechToTextV1Tests.xctest;
+			remoteRef = 1328AF5B1DF348E5004B0DB3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1328AF5E1DF348E5004B0DB3 /* TextToSpeechV1.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = TextToSpeechV1.framework;
+			remoteRef = 1328AF5D1DF348E5004B0DB3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1328AF601DF348E5004B0DB3 /* TextToSpeechV1Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = TextToSpeechV1Tests.xctest;
+			remoteRef = 1328AF5F1DF348E5004B0DB3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1328AF621DF348E5004B0DB3 /* ToneAnalyzerV3.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ToneAnalyzerV3.framework;
+			remoteRef = 1328AF611DF348E5004B0DB3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1328AF641DF348E5004B0DB3 /* ToneAnalyzerV3Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ToneAnalyzerV3Tests.xctest;
+			remoteRef = 1328AF631DF348E5004B0DB3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1328AF661DF348E5004B0DB3 /* TradeoffAnalyticsV1.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = TradeoffAnalyticsV1.framework;
+			remoteRef = 1328AF651DF348E5004B0DB3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1328AF681DF348E5004B0DB3 /* TradeoffAnalyticsV1Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = TradeoffAnalyticsV1Tests.xctest;
+			remoteRef = 1328AF671DF348E5004B0DB3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1328AF6A1DF348E5004B0DB3 /* VisualRecognitionV3.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = VisualRecognitionV3.framework;
+			remoteRef = 1328AF691DF348E5004B0DB3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1328AF6C1DF348E5004B0DB3 /* VisualRecognitionV3Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = VisualRecognitionV3Tests.xctest;
+			remoteRef = 1328AF6B1DF348E5004B0DB3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1328AF6E1DF348E5004B0DB3 /* RestKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RestKit.framework;
+			remoteRef = 1328AF6D1DF348E5004B0DB3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1328AF701DF348E5004B0DB3 /* RestKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RestKitTests.xctest;
+			remoteRef = 1328AF6F1DF348E5004B0DB3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		130968121DF303BF009EB08B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13EB876B1DF359AF000CE92A /* Podfile in Resources */,
 				130968221DF303BF009EB08B /* LaunchScreen.storyboard in Resources */,
 				1309681F1DF303BF009EB08B /* Assets.xcassets in Resources */,
 			);
@@ -162,12 +795,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2DB064877F404EC31331813A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Stevie/Pods-Stevie-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5DB12883E73C87ABB05D64EC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Stevie/Pods-Stevie-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED65DCE32FF2E93790BF96A1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		130968101DF303BF009EB08B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				1351676D1DF308C60011753C /* CameraView.swift in Sources */,
+				13EB876F1DF35A12000CE92A /* AppController.swift in Sources */,
 				135167751DF342810011753C /* OverlayView.swift in Sources */,
 				1309681A1DF303BF009EB08B /* ViewController.swift in Sources */,
 				130968181DF303BF009EB08B /* AppDelegate.swift in Sources */,
@@ -175,6 +857,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1328AF741DF348FB004B0DB3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SpeechToTextV1;
+			targetProxy = 1328AF731DF348FB004B0DB3 /* PBXContainerItemProxy */;
+		};
+		13EB87691DF355DC000CE92A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RestKit;
+			targetProxy = 13EB87681DF355DC000CE92A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		130968201DF303BF009EB08B /* LaunchScreen.storyboard */ = {
@@ -281,7 +976,9 @@
 		};
 		130968271DF303BF009EB08B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA3777999E6DC694F8C8B2FB /* Pods-Stevie.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = R96JD7E834;
 				INFOPLIST_FILE = Stevie/Info.plist;
@@ -294,7 +991,9 @@
 		};
 		130968281DF303BF009EB08B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6BE7E32F031D3060A6E18A4 /* Pods-Stevie.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = R96JD7E834;
 				INFOPLIST_FILE = Stevie/Info.plist;
