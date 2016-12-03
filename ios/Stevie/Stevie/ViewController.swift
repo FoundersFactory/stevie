@@ -12,7 +12,8 @@ class ViewController: UIViewController, CameraViewDelegate {
     
     let cameraView = CameraView()
     let imagePreview = UIImageView()
-
+    let overlayView = OverlayView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -21,18 +22,19 @@ class ViewController: UIViewController, CameraViewDelegate {
         cameraView.start()
         
         self.view.backgroundColor = UIColor.white
-        
+
         let gesture = UITapGestureRecognizer(target: self, action:#selector(self.capture))
         self.view.addGestureRecognizer(gesture)
         
-        imagePreview.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
-        self.view.addSubview(imagePreview)
-        imagePreview.backgroundColor = UIColor.red
+        self.view.addSubview(overlayView)
+        
+        overlayView.state = .thinking
     }
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         cameraView.frame = self.view.bounds
+        overlayView.frame = self.view.bounds
     }
 
     func capture() {

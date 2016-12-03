@@ -23,6 +23,10 @@ class CameraView: UIView, AVCapturePhotoCaptureDelegate {
     
     func start() {
         
+        #if (arch(i386) || arch(x86_64)) && os(iOS)
+            return
+        #endif
+        
         captureSession.sessionPreset = AVCaptureSessionPresetMedium
         
         do {
@@ -43,7 +47,6 @@ class CameraView: UIView, AVCapturePhotoCaptureDelegate {
         self.layer.addSublayer(previewLayer!)
         
         captureSession.startRunning()
-        
     }
     
     override func layoutSubviews() {
