@@ -1,3 +1,25 @@
+A EYE
+=====
+
+A project for the Disrupt Conference 2016 Hackathon.
+
+A Eye helps the visually impaired find objects by using a camera phone as an artifical eye.
+This is achieved with the use of the IBM Watson Visual Recognition APIs. We also use the
+Watson Speech to Text service to handle voice input.
+
+Project Layout
+==============
+
+### /ios
+
+The `/ios` directory contains the Swift code for the iOS mobile app.
+See `ios/Stevie/Stevie/AppController.swift` for the use of Watson's SpeechToText API.
+
+### /api
+
+The '/api' directory contains Python web services code used to wrap the Watson Visual Recognition API.
+You'll also find the code to create the image classifiers and sample image data here.
+
 API
 ===
 

@@ -13,11 +13,13 @@ def index():
 
 @app.route('/class_list')
 def class_list():
+    """Return a list of supported object classes."""
     return jsonify(class_list=CLASSIFIER_MAP.keys())
 
 
 @app.route('/find', methods=['POST'])
 def find():
+    """Return a score for the given object, as found in the uploaded image"""
     object_class = request.args.get('class', None)
     if not object_class:
         return jsonify(error=True, message='Missing class paramater'), 400
