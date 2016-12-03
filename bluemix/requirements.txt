@@ -1,2 +1,0 @@
-watson-developer-cloud
-ipython
