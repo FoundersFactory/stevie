@@ -1,6 +1,6 @@
 from flask import Flask, jsonify, request
 from StringIO import StringIO
-from watson import classify
+from watson import classify, CLASSIFIER_MAP
 
 
 app = Flask(__name__)
@@ -9,6 +9,11 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     return jsonify(hello='world')
+
+
+@app.route('/class_list')
+def class_list():
+    return jsonify(class_list=CLASSIFIER_MAP.keys())
 
 
 @app.route('/find', methods=['POST'])
