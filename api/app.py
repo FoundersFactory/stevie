@@ -1,11 +1,16 @@
-from flask import Flask, jsonify, request, abort
+import time
+from flask import Flask, jsonify, request
+
+
 app = Flask(__name__)
 
 magic = 0.0
 
+
 @app.route('/')
 def index():
     return jsonify(hello='world')
+
 
 @app.route('/find', methods=['POST'])
 def find():
@@ -21,4 +26,6 @@ def find():
 
     magic = (magic + 0.1) % 1
 
-    return jsonify(**{ 'score': magic, 'class': item_class })
+    time.sleep(1)
+
+    return jsonify(**{'score': magic, 'class': item_class})
