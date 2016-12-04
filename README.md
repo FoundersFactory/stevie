@@ -1,9 +1,11 @@
-A EYE
+AEye
 =====
+
+[www.aeye.space](http://www.aeye.space)
 
 A project for the Disrupt Conference 2016 Hackathon.
 
-A Eye helps the visually impaired find objects by using a camera phone as an artifical eye.
+AEye helps the visually impaired find objects by using a camera phone as an artifical eye.
 This is achieved with the use of the IBM Watson Visual Recognition APIs. We also use the
 Watson Speech to Text service to handle voice input.
 
