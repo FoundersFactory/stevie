@@ -23,6 +23,7 @@ class CameraView: UIView, AVCapturePhotoCaptureDelegate {
     
     func start() {
         
+        // Stop crashing my simulator thanks / too lazy for real error checking x
         #if (arch(i386) || arch(x86_64)) && os(iOS)
             return
         #endif

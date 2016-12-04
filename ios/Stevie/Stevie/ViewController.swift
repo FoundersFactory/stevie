@@ -30,18 +30,18 @@ class ViewController: UIViewController, CameraViewDelegate {
         self.view.addGestureRecognizer(gesture)
         self.view.addSubview(overlayView)
         
-        overlayView.state = .thinking
+//        actionButton = UIButton(type: .system)
+//        actionButton?.setImage(#imageLiteral(resourceName: "actionButton"), for: .normal)
+        overlayView.speechButton.addTarget(self, action: #selector(self.startListening), for: .touchUpInside)
+//        self.view.addSubview(actionButton!)
         
-        actionButton = UIButton(type: .system)
-        actionButton?.setImage(#imageLiteral(resourceName: "actionButton"), for: .normal)
-        actionButton?.addTarget(self, action: #selector(self.startListening), for: .touchUpInside)
-        self.view.addSubview(actionButton!)
+//        testLabel.text = "Hello"
+//        testLabel.frame = CGRect(x: 0, y: 0, width: 300, height: 100)
+//        testLabel.textColor = UIColor.red
+//        testLabel.backgroundColor = UIColor.black
+//        self.view.addSubview(testLabel)
         
-        testLabel.text = "Hello"
-        testLabel.frame = CGRect(x: 0, y: 0, width: 300, height: 100)
-        testLabel.textColor = UIColor.red
-        testLabel.backgroundColor = UIColor.black
-        self.view.addSubview(testLabel)
+        overlayView.state = .idle
     }
     
     override func viewWillLayoutSubviews() {
@@ -50,7 +50,7 @@ class ViewController: UIViewController, CameraViewDelegate {
         
         cameraView.frame = self.view.bounds
         overlayView.frame = self.view.bounds
-        actionButton?.frame = CGRect(x: self.view.bounds.size.width / 2 - 44, y: self.view.bounds.size.height - 120, width: 88, height: 88)
+//        actionButton?.frame = CGRect(x: self.view.bounds.size.width / 2 - 44, y: self.view.bounds.size.height - 120, width: 88, height: 88)
     }
 
     func capture() {
@@ -64,8 +64,9 @@ class ViewController: UIViewController, CameraViewDelegate {
         }
         
         AppController.sharedController.detect(item: lookingForItem!, image: image, completion:{(confidence: Float) -> (Void) in
-            print(confidence)
-            self.testLabel.text = confidence.description
+
+            
+            self.overlayView.speechTextLabel.text = confidence.description
             
             if confidence < 0.2 {
                 AppController.sharedController.speak(text: "Cold", pitch: 1)
@@ -78,20 +79,19 @@ class ViewController: UIViewController, CameraViewDelegate {
                 AppController.sharedController.speak(text: "Warmer", pitch: 2)
             } else if confidence > 0.71 {
                 AppController.sharedController.speak(text: "Found it!", pitch: 1)
-                self.testLabel.text = "Found it!"
+                self.overlayView.speechTextLabel.text = "Found it!"
                 self.lookingForItem = nil
             }
-            
-            
+        
             if confidence < 0.7 {
                 self.capture()
             }
-            
-            
         })
     }
     
     func startListening() {
+        
+        overlayView.state = .listening
         
         AppController.sharedController.listen { (result, didUnderstand) -> (Void) in
             
@@ -99,12 +99,14 @@ class ViewController: UIViewController, CameraViewDelegate {
             
             if didUnderstand {
                 
-                self.testLabel.text = "Looking for " + result!
+                self.overlayView.speechTextLabel.text = "Looking for " + result!
                 self.lookingForItem = result!
                 self.capture()
+                self.overlayView.state = .looking
                 
             } else {
-                self.testLabel.text = "I don't understand"
+                self.overlayView.speechTextLabel.text = "I don't understand"
+                self.overlayView.state = .idle
             }
             
             AppController.sharedController.speak(text: self.testLabel.text!, pitch: 1)
