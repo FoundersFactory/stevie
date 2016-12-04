@@ -1,8 +1,0 @@
-applications:
-- path: .
-  memory: 128M
-  instances: 1
-  domain: eu-gb.mybluemix.net
-  name: stevie
-  host: stevie
-  disk_quota: 1024M

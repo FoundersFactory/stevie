@@ -7,7 +7,9 @@ API_KEY = os.environ['API_KEY']
 CLASSIFIER_MAP = {
     'keys': 'keys_1289660703',
     'card': 'card_1394183405',
+    'business': 'card_1394183405',
     'oreo': 'oreo_6385562',
+    'chocolate': 'oreo_6385562',
 }
 
 visual_recognition = VisualRecognitionV3('2016-05-20', api_key=API_KEY)
