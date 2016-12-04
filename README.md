@@ -82,3 +82,8 @@ Field     | Value | Description
 :-------- | :---- | :----------
 class     | keys  | The class being searched for
 score     | 0.8   | Confidence item of that class is present (0.0 - 1.0)
+
+
+### UX Flow
+
+![UX Flow](ux-flow.png)
