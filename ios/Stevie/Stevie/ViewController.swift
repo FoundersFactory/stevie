@@ -66,26 +66,37 @@ class ViewController: UIViewController, CameraViewDelegate {
         AppController.sharedController.detect(item: lookingForItem!, image: image, completion:{(confidence: Float) -> (Void) in
 
             
-            self.overlayView.speechTextLabel.text = confidence.description
-            
-            if confidence < 0.2 {
-                AppController.sharedController.speak(text: "Cold", pitch: 1)
-            } else if confidence < 0.3 {
-                AppController.sharedController.speak(text: "Warm", pitch: 1)
-            } else if confidence < 0.6 {
-                AppController.sharedController.speak(text: "Warm", pitch: 1.5)
-                
-            } else if confidence < 0.7 {
-                AppController.sharedController.speak(text: "Warmer", pitch: 2)
-            } else if confidence > 0.71 {
-                AppController.sharedController.speak(text: "Found it!", pitch: 1)
-                self.overlayView.speechTextLabel.text = "Found it!"
-                self.lookingForItem = nil
-            }
-        
-            if confidence < 0.7 {
+            // If we're not sure, keep looking
+            if confidence < 0.8 {
                 self.capture()
             }
+            
+            UIView.animate(withDuration: 0.5, animations: {() in
+                
+                if confidence <= 0.1 {
+                    AppController.sharedController.speak(text: "Really cold", pitch: 1)
+                    self.overlayView.speechTextLabel.text = "Really cold"
+                    self.overlayView.warmOverlayImageView.alpha = 0.0
+                } else if confidence <= 0.2 {
+                    AppController.sharedController.speak(text: "Cold", pitch: 1)
+                    self.overlayView.speechTextLabel.text = "Cold"
+                    self.overlayView.warmOverlayImageView.alpha = 0.1
+                } else if confidence <= 0.5 {
+                    AppController.sharedController.speak(text: "Warm", pitch: 1)
+                    self.overlayView.speechTextLabel.text = "Warm"
+                    self.overlayView.warmOverlayImageView.alpha = 0.5
+                } else if confidence <= 0.7 {
+                    AppController.sharedController.speak(text: "Really warm!", pitch: 1.5)
+                    self.overlayView.speechTextLabel.text = "Really warm"
+                    self.overlayView.warmOverlayImageView.alpha = 1.0
+                } else if confidence <= 0.8 {
+                    AppController.sharedController.speak(text: "Found it", pitch: 1)
+                    self.overlayView.speechTextLabel.text = "Found it"
+                    self.overlayView.warmOverlayImageView.alpha = 0.0
+                    self.lookingForItem = nil
+                    self.overlayView.state = .idle
+                }
+            })
         })
     }
     
@@ -105,11 +116,11 @@ class ViewController: UIViewController, CameraViewDelegate {
                 self.overlayView.state = .looking
                 
             } else {
-                self.overlayView.speechTextLabel.text = "I don't understand"
+                self.overlayView.speechTextLabel.text = "I don't understand?"
                 self.overlayView.state = .idle
             }
             
-            AppController.sharedController.speak(text: self.testLabel.text!, pitch: 1)
+            AppController.sharedController.speak(text: self.overlayView.speechTextLabel.text!, pitch: 1)
         }
     }
 }

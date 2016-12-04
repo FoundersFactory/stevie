@@ -43,7 +43,7 @@ class AppController {
     func detect(item: String, image: UIImage, completion:@escaping (_ confidence: Float) -> (Void)) {
         
         let data = UIImageJPEGRepresentation(image, 0.8)
-        Alamofire.upload(data!, to: "http://ec2-52-50-132-122.eu-west-1.compute.amazonaws.com:8000/find?class="+item).responseJSON { response in
+        Alamofire.upload(data!, to: "http://api.aeye.space:8000/find?class="+item).responseJSON { response in
 
             let dic = response.result.value as! Dictionary<String, Any>
             completion(dic["score"] as! Float)
