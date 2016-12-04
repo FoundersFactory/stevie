@@ -34,6 +34,8 @@ def find():
 
     try:
         result = classify(image_data, object_class=object_class)
+    except KeyError:
+        return jsonify(error=True, message='Invalid object class'), 400
     except AttributeError:
         return jsonify(error=True, message='Invalid image data?'), 400
     else:
@@ -42,7 +44,7 @@ def find():
             # so checking index 0 should be safe here:
             classifiers = result['images'][0]['classifiers']
             score = classifiers[0]['classes'][0]['score']
-        except IndexError:
+        except (IndexError, KeyError):
             # The classifier didn't match
             score = 0.0
 
